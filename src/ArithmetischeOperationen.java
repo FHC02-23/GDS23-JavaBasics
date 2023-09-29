@@ -32,5 +32,15 @@ public class ArithmetischeOperationen {
         System.out.println("a = " + a);
 
 
+
+        String haus1 = "Haus";
+        String haus2 = "Haus";
+        System.out.println(haus1 == haus2);
+
+        String name1 = new String("Name");
+        String name2 = new String("Name");
+        System.out.println(name1 == name2);
+        System.out.println(name1.equals(name2));
+
     }
 }
