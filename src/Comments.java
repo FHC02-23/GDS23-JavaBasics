@@ -16,5 +16,8 @@ public class Comments {
 
 
          */
+
+//        String firstName = "Max";
+//        String lastName = "Mustermann";
     }
 }
