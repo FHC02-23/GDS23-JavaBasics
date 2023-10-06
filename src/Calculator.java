@@ -32,6 +32,7 @@ public class Calculator {
         printResult(multiply(3, 2));
 
         printResult(divide(3,2));
+        printResult(divide(3, 0));
         printResult(mod(3, 2));
 
     }
@@ -58,15 +59,43 @@ public class Calculator {
         return x * y;
     }
 
-    public static double divide(int a, double b) {
+    public static double divide(int a, double divisor) {
         // cast to double
         // 1. Möglichkeit --> beide input parameter sind int
-        //double result = a / (b * 1.0);
+        //double result = a / (divisor * 1.0);
         // return result
 
         // 2. Möglichkeit
         // Parameter zu double ändern
-        return a / b;
+
+        if (divisor == 0) {
+            return 0;
+        }
+
+        return a / divisor;
+
+    }
+
+    public static double divide2(int a, double divisor) {
+        double result;
+
+        if (divisor == 0) {
+            result = 0;
+        } else {
+            result = a / divisor;
+        }
+
+        return result;
+    }
+
+    public static double divide3(int a, double divisor) {
+        double result = 0;
+
+        if (divisor != 0) {
+            result = a / divisor;
+        }
+
+        return result;
     }
 
     public static int mod(int a, int b) {
