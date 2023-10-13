@@ -35,6 +35,10 @@ public class Calculator {
         printResult(divide(3, 0));
         printResult(mod(3, 2));
 
+        int[] numbers = {1, 2, 3, 4};
+        int resultOfSum = sum(numbers); // STRG + v
+        printResult(resultOfSum);
+
     }
 
     public static int add(int input1, int input2) {
@@ -104,5 +108,15 @@ public class Calculator {
 
     public static void printResult(double result) {
         System.out.println("Das Ergebnis lautet: " + result);
+    }
+
+    public static int sum(int[] numbers) {
+        int res = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            int number = numbers[i];
+            res = res + number;
+        }
+
+        return res;
     }
 }
