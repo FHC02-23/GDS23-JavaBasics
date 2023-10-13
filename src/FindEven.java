@@ -1,4 +1,4 @@
-public class FindEvent {
+public class FindEven {
 
     public static void main(String[] args) {
 
